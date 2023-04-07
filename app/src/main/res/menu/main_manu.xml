@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_bar"
+        android:title="Search"
+        android:icon="@drawable/baseline_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/cart"
+        app:showAsAction="always"
+        android:title="Cart"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        app:actionLayout="@layout/custom_menu_item"
+        android:enabled="false" />
+
+    <item
+        android:id="@+id/log_in"
+        android:title="Bejelentkezés"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/registering"
+        android:title="Regisztrálás"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/bestProducts"
+        android:title="Legjobb termékek"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/allProducts"
+        android:title="Összes termék"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/log_out"
+        android:title="Kijelentkezés"
+        app:showAsAction="never"
+        android:enabled="false"
+        />
+
+
+</menu>

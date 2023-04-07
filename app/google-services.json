@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "249114766106",
+    "project_id": "muszakicikkwebshopdatabase",
+    "storage_bucket": "muszakicikkwebshopdatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249114766106:android:116364cabcbd1d51525aa3",
+        "android_client_info": {
+          "package_name": "com.example.muszakicikkwebshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249114766106-tck56u2ebs4rouvf9nnsj7otuspoq99r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4pn5adamN_0jzsX1TrNw6Xlv09hUS9yM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249114766106-tck56u2ebs4rouvf9nnsj7otuspoq99r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

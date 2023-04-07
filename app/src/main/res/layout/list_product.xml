@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productImage"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/productTitle"
+            android:layout_below="@+id/productImage"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Image"
+            android:layout_centerHorizontal="true"
+            />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/starBar"
+            style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+            android:layout_below="@+id/productTitle"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:isIndicator="true"
+            />
+
+        <TextView
+            android:id="@+id/leiras"
+            style="@style/ItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/starBar"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="Leírrás"
+            android:onClick="onClickLeiras"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:id="@+id/ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leiras"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Kosarba"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ar"
+            android:text="Kosárba"
+            android:enabled="true"
+            />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

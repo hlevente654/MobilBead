@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/form_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+>
+
+        <EditText
+            android:id="@+id/editTextLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextLoginEmail"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:hint="Jelszó"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bejelentkezés"
+            android:layout_below="@+id/editTextLoginPassword"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:onClick="logingIn"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/buttonLoginCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonLogin"
+
+            android:onClick="cancelLogin"
+            android:text="@string/cancelHint"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:padding="20dp"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+    <!--
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+            -->
