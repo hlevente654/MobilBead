@@ -5,7 +5,6 @@
     android:layout_height="wrap_content" >
 
 <ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -39,8 +38,7 @@
             android:layout_centerInParent="true"
             android:layout_marginBottom="20dp"
             android:hint="Jelszó"
-            android:inputType="textPassword"
-            android:layout_centerHorizontal="true"/>
+            android:inputType="textPassword" />
 
 
         <Button

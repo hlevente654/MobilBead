@@ -8,6 +8,7 @@ import androidx.core.view.MenuItemCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
@@ -107,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         setJobScheduler();
 
     }
+
     // Data upload
     private void dataUpload(String name, String info, String price, Float starN, String imageR){
         mProducts.add(new ProductItemModell(
@@ -126,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        /*
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString("userEmail", "");
         editor.apply();
@@ -133,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
         finish();
         FirebaseAuth.getInstance().signOut();
+         */
     }
     private void logOut(){
         //preferences = getSharedPreferences(PREF_KEY, MODE_PRIVATE);
@@ -202,9 +206,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Log.d(LOG_TAG, "Unauthenticated user");
         }
-        // TODO
-        // kosárba gomb enable/disable
-        // @+id/Kosarba
         Log.d(LOG_TAG, "onResume");
         String userEmail = preferences.getString("userEmail", "NINCS ITT");
 
@@ -215,8 +216,6 @@ public class MainActivity extends AppCompatActivity {
             menuLogIn.setEnabled(false);
             menuRegister.setEnabled(false);
         }
-        // TODO:
-        // CRUDE (szálak 7.)
     }
 
 
