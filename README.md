@@ -1,2 +1,3 @@
 # MobilBead
-Műszaki cikk webshop
+Műszaki cikk webshop.
+Ez egy Android mobil alkalmazás a Webfejlesztési keretrendszerek órára.
